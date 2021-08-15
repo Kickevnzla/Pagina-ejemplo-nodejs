@@ -16,7 +16,7 @@ const app = express();
 
 app.set('appName', 'Primera pagina web con Nodejs');
 
-app.set('port', '3000');
+app.set('port', process.env.PORT || 3000);
 
 app.set('views', path.join(__dirname, 'views'));
 
